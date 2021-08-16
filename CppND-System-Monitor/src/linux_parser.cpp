@@ -157,7 +157,7 @@ int LinuxParser::TotalProcesses() {
       }
     }
   }
-  return 0;
+  return0;
 }
 
 // Read and return the number of running processes
@@ -200,7 +200,7 @@ string LinuxParser::Ram(int pid) {
       }
     }
   }
-  return 0;
+  return "0";
 }
 
 // Read and return the user ID associated with a process
@@ -217,7 +217,7 @@ string LinuxParser::Uid(int pid) {
       }
     }
   }
-  return 0;
+  return "0";
 }
 
 // Read and return the user associated with a process
