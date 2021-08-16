@@ -157,7 +157,7 @@ int LinuxParser::TotalProcesses() {
       }
     }
   }
-  return0;
+  return 0;
 }
 
 // Read and return the number of running processes
