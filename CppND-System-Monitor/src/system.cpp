@@ -22,9 +22,9 @@ Processor& System::Cpu() { return cpu_; }
 vector <Process>& System::Processes() {
     const vector <int>& pids = LinuxParser::Pids();
     for (const int &pid: pids) {
-        if (&pid != 0) {
-        processes_.emplace_back(pid);
-        }
+       if(LinuxParser::Command(pid)!="" && LinuxParser::Ram(pid)!="0"){
+    processes_.emplace_back(pid);
+       }
     }
     return processes_;
 }
